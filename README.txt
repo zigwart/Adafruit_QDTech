@@ -11,7 +11,8 @@
 
 	Using the hardware SPI pins is highly recommeneded.
 	
-	Copy the "Adafruit_QDTech" folder into your
+	Unzip and change the folder name to "Adafruit_QDTech".
+	Copy the folder into your
 	<arduinosketchfolder>/libraries/ folder.
 	
 	You will also need the stock "Adafruit_GFX" library.
