@@ -19,6 +19,7 @@
 	https://github.com/adafruit/Adafruit-GFX-Library
 
 	Gilchrist 30/1/2014
+	6/2/14	1.1	Fixed RGB colour order error
 
 ***************************************************
 
