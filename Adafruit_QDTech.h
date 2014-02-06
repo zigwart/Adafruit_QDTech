@@ -15,6 +15,7 @@
 	https://github.com/adafruit/Adafruit-GFX-Library
 
 	Gilchrist 30/1/2014
+	6/2/14	1.1	Fixed RGB colour order error
 
 /***************************************************
   This is a library for the Adafruit 1.8" SPI display.
@@ -66,13 +67,25 @@
 
 // Basic colour definitions
 // QDTech colour order is BGR and not RGB
-#define	QDTech_BLACK   0x0000
+
+
+/*#define	QDTech_BLACK   0x0000
 #define	QDTech_RED     0x001F
 #define	QDTech_BLUE    0xF800
 #define	QDTech_GREEN   0x07E0
 #define QDTech_YELLOW  0x07FF
 #define QDTech_MAGENTA 0xF81F
 #define QDTech_CYAN    0xFFE0  
+#define QDTech_WHITE   0xFFFF
+#define QDTech_GREY    0x632C
+*/
+#define	QDTech_BLACK   0x0000
+#define	QDTech_RED     0xF800
+#define	QDTech_GREEN   0x07E0
+#define	QDTech_BLUE    0x001F
+#define QDTech_YELLOW  0xFFE0
+#define QDTech_MAGENTA 0xF81F
+#define QDTech_CYAN    0x07FF  
 #define QDTech_WHITE   0xFFFF
 #define QDTech_GREY    0x632C
 
@@ -84,7 +97,7 @@ class Adafruit_QDTech : public Adafruit_GFX {
   Adafruit_QDTech(uint8_t CS, uint8_t RS, uint8_t SID, uint8_t SCLK, uint8_t RST);
   Adafruit_QDTech(uint8_t CS, uint8_t RS, uint8_t RST);
 
-  void     init(uint8_t options = 0),
+  void     init(),
            setAddrWindow(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1),
            pushColor(uint16_t color),
            fillScreen(uint16_t color),
@@ -94,7 +107,8 @@ class Adafruit_QDTech : public Adafruit_GFX {
            fillRect(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color),
            setRotation(uint8_t r),
            invertDisplay(boolean i);
-  uint16_t Color565(uint8_t r, uint8_t g, uint8_t b);
+
+uint16_t	Color565(uint8_t r, uint8_t g, uint8_t b);
 
  private:
   uint8_t  tabcolor;
