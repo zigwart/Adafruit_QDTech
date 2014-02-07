@@ -28,9 +28,9 @@ CSA 30/1/2014
 
 #define sclk 13  // Don't change
 #define mosi 11  // Don't change
-#define cs   10
-#define dc   9
-#define rst  8  // you can also connect this to the Arduino reset
+#define cs   9
+#define dc   8
+#define rst  7  // you can also connect this to the Arduino reset
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_QDTech.h> // Hardware-specific library
 #include <SPI.h>
@@ -103,7 +103,7 @@ void setup(void) {
   testroundrects();
   delay(500);
 
-  testmultifillcircles();
+  testmultifillcircles(60);
   delay(500);
 
   testtriangles();
