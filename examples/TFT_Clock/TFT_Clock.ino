@@ -1,9 +1,14 @@
-// An example analogue/digital clock using a TFT LCD screen.
-// 
-//
-// This examples uses the hardware SPI only. Non-hardware SPI
-// is just too slow (~8 times slower!)
-//	Gilchrist 6/2/2014 1.0
+/*
+  An example analogue/digital clock using a TFT LCD screen to show the 
+  use of some of the drawing commands with the Adafruit_QDTech library.
+  For a more accurate clock, it would be better to use the RTClib library.
+  But this is just a demo. 
+
+  This examples uses the hardware SPI only. Non-hardware SPI
+  is just too slow (~8 times slower!)
+
+  Gilchrist 6/2/2014 1.0
+*/
 
 #define sclk 13  // Don't change
 #define mosi 11  // Don't change
