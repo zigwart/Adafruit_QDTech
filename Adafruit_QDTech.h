@@ -66,19 +66,6 @@
 #define QDTech_MADCTL  0x36
 
 // Basic colour definitions
-// QDTech colour order is BGR and not RGB
-
-
-/*#define	QDTech_BLACK   0x0000
-#define	QDTech_RED     0x001F
-#define	QDTech_BLUE    0xF800
-#define	QDTech_GREEN   0x07E0
-#define QDTech_YELLOW  0x07FF
-#define QDTech_MAGENTA 0xF81F
-#define QDTech_CYAN    0xFFE0  
-#define QDTech_WHITE   0xFFFF
-#define QDTech_GREY    0x632C
-*/
 #define	QDTech_BLACK   0x0000
 #define	QDTech_RED     0xF800
 #define	QDTech_GREEN   0x07E0
@@ -127,5 +114,3 @@ volatile uint8_t *dataport, *clkport, *csport, *rsport;
            colstart, rowstart; // some displays need this changed
 
 };
-
-#endif
