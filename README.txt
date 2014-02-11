@@ -1,7 +1,7 @@
 ***************************************************
-	This is a modification of the Adafruit SPI LCD library,
-	customised for hardware SPI and the QDTech board 
-	using a Samsung S6D02A1 chip.
+	This is a modification of the Adafruit SPI TFT LCD Arduino 
+	library, customised for hardware SPI and the QDTech 1.8" 
+	LCD board using a Samsung S6D02A1 chip.
 
 	Most changes are made to the initialisation routine but
 	non-Arduino code has been removed too.
