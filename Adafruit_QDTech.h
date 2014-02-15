@@ -35,8 +35,8 @@
   MIT license, all text above must be included in any redistribution
  ****************************************************/
 
-#ifndef _ADAFRUIT_ST7735H_
- #define _ADAFRUIT_ST7735H_
+#ifndef Adafruit_QDTech_h
+#define Adafruit_QDTech_h
 
 #if ARDUINO >= 100
  #include "Arduino.h"
@@ -114,3 +114,4 @@ volatile uint8_t *dataport, *clkport, *csport, *rsport;
            colstart, rowstart; // some displays need this changed
 
 };
+#ifndef
