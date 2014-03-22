@@ -114,4 +114,4 @@ volatile uint8_t *dataport, *clkport, *csport, *rsport;
            colstart, rowstart; // some displays need this changed
 
 };
-#ifndef
+#endif
